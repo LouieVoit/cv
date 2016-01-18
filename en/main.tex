@@ -1,0 +1,62 @@
+
+\documentclass[11pt,a4paper,sans]{moderncv}       
+\moderncvstyle{classic}                             
+\moderncvcolor{blue}                                 
+\usepackage[utf8]{inputenc}                       
+\usepackage[scale=0.7,top=1.5cm,bottom=1.3cm]{geometry}
+
+
+% personal data
+\name{Louis}{Viot}
+\title{}                               % optional, remove / comment the line if not wanted
+\address{54 Résidence Le Hameau}{13115 Saint-Paul-les-Durance}{France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(+33)628685904}                   % optional, remove / comment the line if not wanted
+\email{louis.viot@etu.enseeiht.fr}
+\extrainfo{23 ans - 07/10/1992}
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2014-2015}{MSc in Distributed Systems and Critical Software}{Graduated 10/2015}{Toulouse}{}{Courses
+included Distributed system, Grid computing, Distributed computing, Cloud computing}
+\cventry{2012-2015}{INP ENSEEIHT}{Graduated 10/2015}{Toulouse}{}{Institute of Engineering in Electrical Engineering, Automation, Electronics, Computer Science, Applied Mathematics, Hydraulics, Telecommunications.\\ Engineering Degree in Applied Mathematics and Computer Science.\\ Courses included Optimization, Topology, Linear Algebra, Differential equation, Measure and distribution, Numerical analysis, Imperative, Functional and Object-oriented Programming, Computer architecture, Parallel algorithms.}  
+\cventry{2010-2012}{Preparatory class}{}{Clemenceau, Reims}{}{2-year undergraduate intensive course in Mathematics and Physics leading to competitive exams for entrance in Engineering Schools.}
+\cventry{2010}{Baccalaureat S with distinction}{}{Charleville-Mézières}{}{French equivalent of the highschool diploma.}
+
+\section{Work Experience}
+\cventry{2015}{Six months research internship}{CEA}{Cadarache}{}{Implementation of a predictor/corrector numerical scheme in a code (\textit{Java}) for nuclear reactor severe accident}
+\cventry{2014}{Two months research internship}{Polytechnic Institute}{Bragança}{}{Teeth extraction from
+dental x-ray using contour detection, image segmentation, texture pattern recognition and Chan-Vese active contour methods}
+\cventry{2013}{Summer job}{Conforama}{Charleville-Mézières}{}{}
+\cventry{2010-2012}{Summer job}{SCEA Les Cressonières d'Aquitaine}{Agen}{Farming sector}{}
+
+\section{Languages}
+\cvitemwithcomment{French}{Native speaker}{}
+\cvitemwithcomment{English}{upper-intermediate level}{Fluent in written and spoken. \textit{Score TOEIC : 975}}
+\cvitemwithcomment{Russian}{Beginner}{}
+
+\section{Computer skills}
+\cvitem{Operating system}{UNIX (Linux), Windows and Mac OS}
+\cvitem{Programming languages}{C, C++, Python, Java, MatLab, Fortran, OcamL, ADA, Prolog}
+
+\section{Interests and additional information}
+\cvitem{Sport}{Cycling, Mountain Bike, Rugby}
+\cvitem{Reading and Writing}{winner of the «Etonnants-voyageurs» prize for young writers in 2008.}
+
+\end{document}
+
+

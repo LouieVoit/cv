@@ -34,13 +34,20 @@
   top=1.0in
 }
 
-% Don't indent paragraphs.
+\renewenvironment{itemize}{
+  \begin{list}{}{
+      \setlength{\leftmargin}{1.5em}
+      \setlength{\itemsep}{0.25em}
+      \setlength{\parskip}{0pt}
+      \setlength{\parsep}{0.25em}
+    }
+}{
+  \end{list}
+}
+
 \setlength\parindent{0em}
 
-% Print the month and year
-\renewcommand{\today}{\ifcase \month \or January\or February\or March\or April\or May%
-\or June\or July\or August\or September\or October\or November\or December\fi%
-\space \number \year}
+\renewcommand{\today}{\ifcase \month \or January\or February\or March\or April\or May \or June\or July\or August\or September\or October\or November\or December\fi \space \the\year}
 
 \begin{document}
 

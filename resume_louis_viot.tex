@@ -1,7 +1,4 @@
 \documentclass{article}
-
-\def\name{Louis Viot}
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}                   
@@ -9,24 +6,20 @@
 \usepackage{xcolor}
 \usepackage{geometry}
 \usepackage{mathpazo}
-
-
 \hypersetup{
-  	pdfauthor = {\name},
+	pdfauthor = {Louis Viot},
   	pdfkeywords = {applied mathematics, computer science},
-	pdftitle = {\name: Curriculum Vitae},
+	pdftitle = {Louis Viot: Curriculum Vitae},
   	pdfsubject = {Curriculum Vitae},
-    colorlinks=true,       % false: boxed links; true: colored links
+	 colorlinks=true,
 	allcolors=green!50!black,     
-    urlcolor=red!50!black           
+	urlcolor=red!50!black           
 }
-
 \geometry{
-	body={6.5in, 9.0in},
-	left=1.0in,
-	top=1.0in
+	left=2.cm,
+	right=2.cm,
+	top=2.7cm
 }
-
 \renewenvironment{itemize}{
   \begin{list}{}{
       \setlength{\leftmargin}{1.5em}
@@ -37,73 +30,82 @@
 }{
   \end{list}
 }
-
 \setlength\parindent{0em}
 \renewcommand{\today}{\ifcase \month \or January\or February\or March\or April\or May \or June\or July\or August\or September\or October\or November\or December\fi \space \the\year}
 
 \begin{document}
-{\huge \bf \name}\\
+{\huge \bf Louis Viot}\\
 \bigskip
-\begin{minipage}[t]{0.495\textwidth}
+\begin{minipage}[t]{0.5\textwidth}
 	30 Avenue Henri Pontier \\
     Building C2 \\
     Aix-en-Provence, 13100 France
 \end{minipage}
-\begin{minipage}[t]{0.495\textwidth}
-	Phone: (+33)442254758 \\
+\begin{minipage}[]{0.5\textwidth}
+\begin{flushright}
 	Mobile Phone: (+33)628685904 \\
 	E-mail: \href{mailto:louis.viot@alumni.enseeiht.fr}{louis.viot@alumni.enseeiht.fr} \\
+\end{flushright}
 \end{minipage}
 
-\section*{Education}
+\section*{Employment}
+	\begin{itemize}
+		\item \textbf{2018 - Current : Internship supervisor, DTN/SMTA/LMAG, CEA Cadarache.}
+		\item \textbf{2015 - Current : PhD Thesis, DTN/SMTA/LMAG, CEA Cadarache.}
+			\begin{itemize}
+				\item \textbf{Expecting to graduate in september 2018.}
+				\item \textbf{PhD Title :} ``Modeling and simulation of complex systems for nuclear severe accidents''.
+				\item \textbf{Supervisor :} Florian De Vuyst, LMAC, UTC, Sorbonne Universités, 60200 Compiègne.
+				\item \textbf{Supervisor :} Laurent Saas, DTN/SMTA/LMAG, CEA Cadarache.
+				\item \textbf{Brief Synopsis of Research :} the simulation of severe accidents in nuclear reactors leads to coupled problems of multiphysics and multiscale models. These models can be of different types going from refined models, e.g. mesh based models, to coarse-grained models, e.g. stationary or lumped parameter models. Furthermore, they often have internal states with transitions potentially associated with discontinuities. Altogether, the simulation of severe accidents requires to solve complex systems composed of a wide variety of interacting models. During the thesis, coupling schemes and synchronization techniques have been studied and designed to accuratly solve these systems. A new software architecture has been integrated in the already existing CEA's platform named \textit{PROCOR} and numerical analysis and calculations have been performed on representative and real industrial test cases.
+			\end{itemize}
+	\item \textbf{2015 : Six months research internship, CEA Cadarache.}
+		\begin{itemize}
+			\item \textbf{Brief Synopsis of Research :} Implementation of a predictor/corrector numerical scheme in a code (\textit{Java}) for nuclear reactor severe accidents.
+		\end{itemize}
+	\item \textbf{2014 : Two months research internship, Polytechnic Institute, Bragança, Portugal.}
+		\begin{itemize}
+			\item \textbf{Brief Synopsis of Research :} Teeth extraction from dental x-ray using contour detection, image segmentation, texture pattern recognition and Chan-Vese active contour methods.
+		\end{itemize}
+\end{itemize}  
 
+\section*{Skills}
 \begin{itemize}
-  	\item \textbf{PhD in Computer Science and Applied Mathematics, 2015 - Current, CEA Cadarache, France.}
+	\item \textbf{Applied mathematics :} Numerical analysis, Optimization, Topology, Linear Algebra, Differential equation, Measure and distribution.
+	\item \textbf{Computer science :} Object-oriented, Imperative and Functional programming, Software architecture, Computer architecture, Parallel algorithms, Critical software, Distributed system, Grid computing, Distributed computing, Cloud computing.
+	\item \textbf{Operating systems :} UNIX (Linux), Windows and Mac OS.
+	\item \textbf{Programming :} Java, C, C++, Python, Fortran, OcamL, Haskell, ADA, Prolog, \LaTeX. 
+	\item \textbf{Software :} PROCOR, Git, Svn, MatLab, Scilab, Maple.
+	\item \textbf{Spoken Languages :} French (mother tongue), English (upper-intermediate level, fluent in written and spoken, TOEIC : 975), Russian and German (beginner).
+\end{itemize}  
+
+\section*{Education}
+\begin{itemize}
+  	\item \textbf{2015 - Current : PhD in Computer Science and Applied Mathematics, CEA Cadarache.}
 		\begin{itemize}
 			\item PhD Title : ``Modeling and simulation of complex systems for nuclear severe accidents''.
-			\item Supervisor : Florian De Vuyst, LMAC, UTC, Sorbonne Universités, 60200 Compiègne, France.
-			\item \textbf{Expecting to graduate in september 2018.}
-			\item \textbf{Brief Synopsis of Research}: the simulation of severe accidents in nuclear reactors leads to coupled problems of multiphysics and multiscale models. These models can be of different types going from refined models, e.g. mesh based models, to coarse-grained models, e.g. stationary or lumped parameter models. Furthermore, they often have internal states with transitions potentially associated with discontinuities. Altogether, the simulation of severe accidents recquires to solve complex systems composed of a wide variety of interacting models. During the thesis, coupling schemes and synchronization techniques have been studied and designed to accuratly solve these systems. A new software architecture has been integrated in the already existing CEA's platform named \textit{PROCOR} and numerical analysis and calculations have been performed on representative and real industrial test cases.
 		\end{itemize}
-	\item \textbf{MSc in Distributed Systems and Critical Software, 2014 - graduated in 2015, Toulouse, France.}
-		\begin{itemize}
-			\item Courses included distributed system, grid computing, distributed computing, cloud computing.
-		\end{itemize}
-    \item \textbf{INP ENSEEIHT, a top ranking French engineering school, 2012 - graduated in 2015, Toulouse, France.}
+	\item \textbf{2014 - graduated in 2015 : MSc in Distributed Systems and Critical Software, Toulouse.}
+    	\item \textbf{2012 - graduated in 2015 : INP ENSEEIHT, a top ranking French engineering school, Toulouse.}
 		\begin{itemize}
 			\item Institute of Engineering in Electrical Engineering, Automation, Electronics, Computer Science, Applied Mathematics, Hydraulics, Telecommunications.
 			\item Engineering Degree in Applied Mathematics and Computer Science.
-			\item Courses included Optimization, Topology, Linear Algebra, Differential equation, Measure and distribution, Numerical analysis, Imperative, Functional and Object-oriented Programming, Computer architecture, Parallel algorithms.
 		\end{itemize}
-	\item \textbf{Classes préparatoires (MPSI, MP*), 2010 - graduated in 2012, Lycée Clemenceau, Reims, France.}
+	\item \textbf{2010 - graduated in 2012 : Classes préparatoires (MPSI, MP*), Lycée Clemenceau, Reims.}
 		\begin{itemize}
 			\item Two years of intense preparation for selective entrance to engineering schools.
 			\item Courses included : Mathematics and Physics.
 		\end{itemize}
-	\item \textbf{Baccalaureat S, 2007 - graduated in 2010, Lycée François Bazin, Reims, France.}
+	\item \textbf{2007 - graduated in 2010 : Baccalaureat S, Lycée François Bazin, Charleville-Mézières.}
 		\begin{itemize}
 			\item Passed with distinction, equivalent to A levels in science
 		\end{itemize}
 \end{itemize}
 
-\section*{Employment}
+\section*{Publications and Conference Papers}
 \begin{itemize}
-	\item \textbf{Six months research internship, 2015, CEA Cadarache, France.}
-		\begin{itemize}
-			\item Implementation of a predictor/corrector numerical scheme in a code (\textit{Java}) for nuclear reactor severe accidents.
-		\end{itemize}
-	\item \textbf{Two months research internship, 2014, Polytechnic Institute, Bragança, Portugal.}
-		\begin{itemize}
-			\item Teeth extraction from dental x-ray using contour detection, image segmentation, texture pattern recognition and Chan-Vese active contour methods.
-		\end{itemize}
-	\item \textbf{Summer jobs, 2010-2013}
-		\begin{itemize}
-			\item Conforama, Charleville-Mézières.
-			\item SCEA Les Cressonières d'Aquitaine, farming sector, Agen.
-		\end{itemize}
+	\item \textbf{Journal article : ``Solving coupled problems of lumped parameter models in a platform for severe accidents in nuclear reactors''}, \textit{submitted} in International Journal for Multiscale Computational Engineering.
 \end{itemize}  
-
-%\section*{Publications and Conference Papers}
 
 \section*{Conferences and Seminars}
 \begin{itemize}
@@ -113,24 +115,12 @@
 
 \section*{Summer schools}
 \begin{itemize}
-	\item \textbf{Numerical simulation thematic school (\textit{ETSN}) : ``Validation of numerical simulation and quality of computation codes''} organized by CEA/DIF with LRC MESO (CMLA - ENS Cachan), 2018, Cargèse, France.
-	\item \textbf{\textit{CEMRACS} : ``Numerical methods for stochastic models: control, uncertainty quantification, mean-field''}, 2017, CIRM, Marseille.
-	\item \textbf{Numerical simulation thematic school (\textit{ETSN}) : ``Methods for interface tracking''} organized by CEA/DIF with LRC MESO (CMLA - ENS Cachan), 2017, Cadarache, France.
-	\item \textbf{Numerical simulation thematic school (\textit{ETSN}) : ``Complex flows, advanced schemes, singularity treatments and high performance computations in hydrodynamic''}, organized by CEA/DIF with LRC MESO (CMLA - ENS Cachan), 2016, Cadarache, France.
+	\item \textbf{Numerical simulation thematic school (ETSN) :} ``Validation of numerical simulation and quality of computation codes'' organized by CEA/DIF with LRC MESO (CMLA - ENS Cachan), 2018, Cargèse.
+	\item \textbf{CEMRACS :} ``Numerical methods for stochastic models: control, uncertainty quantification, mean-field'', 2017, CIRM, Marseille.
+	\item \textbf{Numerical simulation thematic school (ETSN) :} ``Methods for interface tracking'' organized by CEA/DIF with LRC MESO (CMLA - ENS Cachan), 2017, Cadarache.
+	\item \textbf{Numerical simulation thematic school (ETSN) :} ``Complex flows, advanced schemes, singularity treatments and high performance computations in hydrodynamic'', organized by CEA/DIF with LRC MESO (CMLA - ENS Cachan), 2016, Cadarache.
 \end{itemize}  
 
-\section*{Programming Skills}
-\begin{itemize}
-	\item Operating systems : UNIX (Linux), Windows and Mac OS.
-	\item Programming : C, C++, Python, Java, Fortran, OcamL, Haskell, ADA, Prolog, MatLab, Maple, \LaTeX. 
-\end{itemize}  
-
-\section*{Spoken Languages}
-\begin{itemize}
-	\item French : mother tongue.
-	\item English : upper-intermediate level, fluent in written and spoken. Score TOEIC : 975.
-	\item Russian, German : beginner.
-\end{itemize}
 \section*{Interests and additional information}
 \begin{itemize}
 	\item Sports : Cycling, Mountain Bike, Rugby.
